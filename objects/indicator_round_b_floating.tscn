@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://35x7nlqjley4"]
+
+[ext_resource type="PackedScene" uid="uid://qowb4ewnm0d0" path="res://models/prototyping/models/indicator-round-b.glb" id="1_y80t1"]
+[ext_resource type="Script" path="res://objects/cloud.gd" id="2_uw02g"]
+
+[node name="indicator-round-b-floating" instance=ExtResource("1_y80t1")]
+script = ExtResource("2_uw02g")

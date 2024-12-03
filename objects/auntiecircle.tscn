@@ -1,0 +1,214 @@
+[gd_scene load_steps=9 format=3 uid="uid://bbno7d8bqruc0"]
+
+[ext_resource type="PackedScene" uid="uid://fqfc0dtl2xlc" path="res://models/core_models/platform-grass-large-round.glb" id="1_kvklk"]
+[ext_resource type="PackedScene" uid="uid://blqf5cwsk25xj" path="res://models/core_models/grass.glb" id="2_0th4y"]
+[ext_resource type="PackedScene" uid="uid://dkw27llxh1d4w" path="res://models/core_models/grass-small.glb" id="3_m306y"]
+[ext_resource type="PackedScene" uid="uid://crjxc823ldoc3" path="res://models/props/flowers.glb" id="4_ch3ad"]
+[ext_resource type="PackedScene" uid="uid://bjf7nnqb2vgjd" path="res://models/props/flowers-tall.glb" id="5_s6rbb"]
+[ext_resource type="PackedScene" uid="uid://b7yv016l57x1q" path="res://models/props/mushrooms.glb" id="6_ohofl"]
+[ext_resource type="PackedScene" uid="uid://dmequtx2oso1f" path="res://models/props/rocks.glb" id="7_rc7ml"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_h7k1f"]
+data = PackedVector3Array(-0.9568, 0.2, 2.3096, 0, 0.2, 2.5, 0, 0, 2.25, 0, 0, 2.25, -0.8611, 0, 2.0787, -0.9568, 0.2, 2.3096, 1.7677, 0.2, 1.7677, 2.3096, 0.2, 0.9567, 2.0787, 0, 0.861, 2.0787, 0, 0.861, 1.5909, 0, 1.5909, 1.7677, 0.2, 1.7677, 2.0787, 0, -0.8611, 2.3096, 0.2, -0.9568, 1.7677, 0.2, -1.7678, 1.7677, 0.2, -1.7678, 1.5909, 0, -1.591, 2.0787, 0, -0.8611, -2.0788, 0, -0.8611, -1.591, 0, -1.591, -1.7678, 0.2, -1.7678, -1.7678, 0.2, -1.7678, -2.3097, 0.2, -0.9568, -2.0788, 0, -0.8611, -2.2501, 0, 0, -2.0788, 0, -0.8611, -2.3097, 0.2, -0.9568, -2.3097, 0.2, -0.9568, -2.5, 0.2, 0, -2.2501, 0, 0, 2.25, 0, 0, 2.5, 0.2, 0, 2.3096, 0.2, -0.9568, 2.3096, 0.2, -0.9568, 2.0787, 0, -0.8611, 2.25, 0, 0, -1.591, 0, -1.591, -0.8611, 0, -2.0788, -0.9568, 0.2, -2.3097, -0.9568, 0.2, -2.3097, -1.7678, 0.2, -1.7678, -1.591, 0, -1.591, 2.3096, 0.2, 0.9567, 2.5, 0.2, 0, 2.25, 0, 0, 2.25, 0, 0, 2.0787, 0, 0.861, 2.3096, 0.2, 0.9567, -2.3097, 0.2, 0.9567, -2.0788, 0, 0.861, -2.2501, 0, 0, -2.2501, 0, 0, -2.5, 0.2, 0, -2.3097, 0.2, 0.9567, 0.861, 0, -2.0788, 0.9567, 0.2, -2.3097, 0, 0.2, -2.5, 0, 0.2, -2.5, 0, 0, -2.2501, 0.861, 0, -2.0788, 1.5909, 0, -1.591, 1.7677, 0.2, -1.7678, 0.9567, 0.2, -2.3097, 0.9567, 0.2, -2.3097, 0.861, 0, -2.0788, 1.5909, 0, -1.591, 0.9567, 0.2, 2.3096, 1.7677, 0.2, 1.7677, 1.5909, 0, 1.5909, 1.5909, 0, 1.5909, 0.861, 0, 2.0787, 0.9567, 0.2, 2.3096, -0.9568, 0.2, 2.3096, -0.8611, 0, 2.0787, -1.591, 0, 1.5909, -1.591, 0, 1.5909, -1.7678, 0.2, 1.7677, -0.9568, 0.2, 2.3096, -1.7678, 0.2, 1.7677, -1.591, 0, 1.5909, -2.0788, 0, 0.861, -2.0788, 0, 0.861, -2.3097, 0.2, 0.9567, -1.7678, 0.2, 1.7677, -0.8611, 0, -2.0788, 0, 0, -2.2501, 0, 0.2, -2.5, 0, 0.2, -2.5, -0.9568, 0.2, -2.3097, -0.8611, 0, -2.0788, 0, 0.2, 2.5, 0.9567, 0.2, 2.3096, 0.861, 0, 2.0787, 0.861, 0, 2.0787, 0, 0, 2.25, 0, 0.2, 2.5, -1.7678, 0.5, -1.7678, -1.7678, 0.2, -1.7678, -0.9568, 0.2, -2.3097, -0.9568, 0.2, -2.3097, -0.9568, 0.5, -2.3097, -1.7678, 0.5, -1.7678, 2.3096, 0.5, 0.9567, 2.5, 0.5, 0, 2.5, 0.2, 0, 2.5, 0.2, 0, 2.3096, 0.2, 0.9567, 2.3096, 0.5, 0.9567, -2.3097, 0.2, -0.9568, -1.7678, 0.2, -1.7678, -1.7678, 0.5, -1.7678, -1.7678, 0.5, -1.7678, -2.3097, 0.5, -0.9568, -2.3097, 0.2, -0.9568, 0, 0.5, 2.5, 0, 0.2, 2.5, -0.9568, 0.2, 2.3096, -0.9568, 0.2, 2.3096, -0.9568, 0.5, 2.3096, 0, 0.5, 2.5, -0.9568, 0.5, 2.3096, -0.9568, 0.2, 2.3096, -1.7678, 0.2, 1.7677, -1.7678, 0.2, 1.7677, -1.7678, 0.5, 1.7677, -0.9568, 0.5, 2.3096, -2.5, 0.2, 0, -2.3097, 0.2, -0.9568, -2.3097, 0.5, -0.9568, -2.3097, 0.5, -0.9568, -2.5, 0.5, 0, -2.5, 0.2, 0, -1.7678, 0.2, 1.7677, -2.3097, 0.2, 0.9567, -2.3097, 0.5, 0.9567, -2.3097, 0.5, 0.9567, -1.7678, 0.5, 1.7677, -1.7678, 0.2, 1.7677, 0.9567, 0.5, 2.3096, 0.9567, 0.2, 2.3096, 0, 0.2, 2.5, 0, 0.2, 2.5, 0, 0.5, 2.5, 0.9567, 0.5, 2.3096, 1.7677, 0.5, 1.7677, 2.3096, 0.5, 0.9567, 2.3096, 0.2, 0.9567, 2.3096, 0.2, 0.9567, 1.7677, 0.2, 1.7677, 1.7677, 0.5, 1.7677, 1.7677, 0.5, 1.7677, 1.7677, 0.2, 1.7677, 0.9567, 0.2, 2.3096, 0.9567, 0.2, 2.3096, 0.9567, 0.5, 2.3096, 1.7677, 0.5, 1.7677, -2.3097, 0.2, 0.9567, -2.5, 0.2, 0, -2.5, 0.5, 0, -2.5, 0.5, 0, -2.3097, 0.5, 0.9567, -2.3097, 0.2, 0.9567, 2.0787, 0, 0.861, 2.25, 0, 0, 2.0787, 0, -0.8611, 2.0787, 0, -0.8611, 1.5909, 0, 1.5909, 2.0787, 0, 0.861, 2.0787, 0, -0.8611, 1.5909, 0, -1.591, 1.5909, 0, 1.5909, 1.5909, 0, -1.591, 0.861, 0, 2.0787, 1.5909, 0, 1.5909, 1.5909, 0, -1.591, 0.861, 0, -2.0788, 0.861, 0, 2.0787, 0.861, 0, -2.0788, 0, 0, 2.25, 0.861, 0, 2.0787, 0.861, 0, -2.0788, 0, 0, -2.2501, 0, 0, 2.25, 0, 0, -2.2501, -0.8611, 0, 2.0787, 0, 0, 2.25, 0, 0, -2.2501, -0.8611, 0, -2.0788, -0.8611, 0, 2.0787, -0.8611, 0, -2.0788, -1.591, 0, -1.591, -0.8611, 0, 2.0787, -1.591, 0, -1.591, -1.591, 0, 1.5909, -0.8611, 0, 2.0787, -1.591, 0, -1.591, -2.0788, 0, 0.861, -1.591, 0, 1.5909, -1.591, 0, -1.591, -2.0788, 0, -0.8611, -2.0788, 0, 0.861, -2.0788, 0, -0.8611, -2.2501, 0, 0, -2.0788, 0, 0.861, 0, 0.5, -2.5, 0, 0.2, -2.5, 0.9567, 0.2, -2.3097, 0.9567, 0.2, -2.3097, 0.9567, 0.5, -2.3097, 0, 0.5, -2.5, 0.9567, 0.5, -2.3097, 0.9567, 0.2, -2.3097, 1.7677, 0.2, -1.7678, 1.7677, 0.2, -1.7678, 1.7677, 0.5, -1.7678, 0.9567, 0.5, -2.3097, 2.3096, 0.5, -0.9568, 1.7677, 0.5, -1.7678, 1.7677, 0.2, -1.7678, 1.7677, 0.2, -1.7678, 2.3096, 0.2, -0.9568, 2.3096, 0.5, -0.9568, 2.5, 0.5, 0, 2.3096, 0.5, -0.9568, 2.3096, 0.2, -0.9568, 2.3096, 0.2, -0.9568, 2.5, 0.2, 0, 2.5, 0.5, 0, 2.3096, 0.5, -0.9568, 2.5, 0.5, 0, 2.3096, 0.5, 0.9567, 2.3096, 0.5, 0.9567, 2.2961, 0.5, 0, 2.3096, 0.5, -0.9568, 2.2961, 0.5, 0, 2.1213, 0.5, -0.8787, 2.3096, 0.5, -0.9568, 2.1213, 0.5, 0.8787, 2.2961, 0.5, 0, 2.3096, 0.5, 0.9567, 2.1213, 0.5, -0.8787, 1.7677, 0.5, -1.7678, 2.3096, 0.5, -0.9568, 2.3096, 0.5, 0.9567, 1.7677, 0.5, 1.7677, 2.1213, 0.5, 0.8787, 2.1213, 0.5, -0.8787, 1.6235, 0.5, -1.6236, 1.7677, 0.5, -1.7678, 1.7677, 0.5, 1.7677, 1.6235, 0.5, 1.6235, 2.1213, 0.5, 0.8787, 1.6235, 0.5, -1.6236, 0.9567, 0.5, -2.3097, 1.7677, 0.5, -1.7678, 1.7677, 0.5, 1.7677, 0.9567, 0.5, 2.3096, 1.6235, 0.5, 1.6235, 1.6235, 0.5, -1.6236, 0.8787, 0.5, -2.1213, 0.9567, 0.5, -2.3097, 0.9567, 0.5, 2.3096, 0.8787, 0.5, 2.1213, 1.6235, 0.5, 1.6235, 0.8787, 0.5, -2.1213, 0, 0.5, -2.5, 0.9567, 0.5, -2.3097, 0.8787, 0.5, -2.1213, 0, 0.5, -2.2961, 0, 0.5, -2.5, 0.9567, 0.5, 2.3096, 0, 0.5, 2.5, 0.8787, 0.5, 2.1213, 0, 0.5, 2.5, 0, 0.5, 2.2961, 0.8787, 0.5, 2.1213, 0, 0.5, 2.5, -0.8787, 0.5, 2.1213, 0, 0.5, 2.2961, 0, 0.5, 2.5, -0.9568, 0.5, 2.3096, -0.8787, 0.5, 2.1213, -0.9568, 0.5, 2.3096, -1.6236, 0.5, 1.6235, -0.8787, 0.5, 2.1213, -0.9568, 0.5, 2.3096, -1.7678, 0.5, 1.7677, -1.6236, 0.5, 1.6235, -1.7678, 0.5, 1.7677, -2.1213, 0.5, 0.8787, -1.6236, 0.5, 1.6235, 0, 0.5, -2.2961, -0.9568, 0.5, -2.3097, 0, 0.5, -2.5, 0, 0.5, -2.2961, -0.8787, 0.5, -2.1213, -0.9568, 0.5, -2.3097, -0.8787, 0.5, -2.1213, -1.6236, 0.5, -1.6236, -0.9568, 0.5, -2.3097, -1.6236, 0.5, -1.6236, -1.7678, 0.5, -1.7678, -0.9568, 0.5, -2.3097, -1.6236, 0.5, -1.6236, -2.1213, 0.5, -0.8787, -1.7678, 0.5, -1.7678, -1.7678, 0.5, 1.7677, -2.3097, 0.5, 0.9567, -2.1213, 0.5, 0.8787, -2.1213, 0.5, -0.8787, -2.3097, 0.5, -0.9568, -1.7678, 0.5, -1.7678, -2.3097, 0.5, 0.9567, -2.2961, 0.5, 0, -2.1213, 0.5, 0.8787, -2.1213, 0.5, -0.8787, -2.2961, 0.5, 0, -2.3097, 0.5, -0.9568, -2.3097, 0.5, 0.9567, -2.3097, 0.5, -0.9568, -2.2961, 0.5, 0, -2.3097, 0.5, 0.9567, -2.5, 0.5, 0, -2.3097, 0.5, -0.9568, -0.9568, 0.5, -2.3097, -0.9568, 0.2, -2.3097, 0, 0.2, -2.5, 0, 0.2, -2.5, 0, 0.5, -2.5, -0.9568, 0.5, -2.3097, 2.1213, 0.5, -0.8787, 2.2961, 0.5, 0, 2.1213, 0.5, 0.8787, 2.1213, 0.5, 0.8787, 1.6235, 0.5, -1.6236, 2.1213, 0.5, -0.8787, 2.1213, 0.5, 0.8787, 1.6235, 0.5, 1.6235, 1.6235, 0.5, -1.6236, 1.6235, 0.5, 1.6235, 0.8787, 0.5, -2.1213, 1.6235, 0.5, -1.6236, 1.6235, 0.5, 1.6235, 0.8787, 0.5, 2.1213, 0.8787, 0.5, -2.1213, 0.8787, 0.5, 2.1213, 0, 0.5, -2.2961, 0.8787, 0.5, -2.1213, 0.8787, 0.5, 2.1213, 0, 0.5, 2.2961, 0, 0.5, -2.2961, 0, 0.5, 2.2961, -0.8787, 0.5, 2.1213, 0, 0.5, -2.2961, -0.8787, 0.5, 2.1213, -0.8787, 0.5, -2.1213, 0, 0.5, -2.2961, -0.8787, 0.5, 2.1213, -1.6236, 0.5, -1.6236, -0.8787, 0.5, -2.1213, -0.8787, 0.5, 2.1213, -1.6236, 0.5, 1.6235, -1.6236, 0.5, -1.6236, -1.6236, 0.5, 1.6235, -2.1213, 0.5, -0.8787, -1.6236, 0.5, -1.6236, -1.6236, 0.5, 1.6235, -2.1213, 0.5, 0.8787, -2.1213, 0.5, -0.8787, -2.1213, 0.5, 0.8787, -2.2961, 0.5, 0, -2.1213, 0.5, -0.8787)
+
+[node name="platform-grass-large-round" instance=ExtResource("1_kvklk")]
+
+[node name="grass" parent="platform-grass-large-round2" index="0" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11143, 0.494852, 1.70586)
+
+[node name="grass-small" parent="platform-grass-large-round2" index="1" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41657, 0.49161, 1.45228)
+
+[node name="grass-small2" parent="platform-grass-large-round2" index="2" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 1.97803, 0.486922, 0.805143)
+
+[node name="grass3" parent="platform-grass-large-round2" index="3" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.99617, 0.494852, 0.303865)
+
+[node name="grass-small3" parent="platform-grass-large-round2" index="4" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73372, 0.49161, -0.860037)
+
+[node name="grass4" parent="platform-grass-large-round2" index="5" instance=ExtResource("2_0th4y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 2.01075, 0.490164, -0.26806)
+
+[node name="grass-small4" parent="platform-grass-large-round2" index="6" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 1.95739, 0.486922, -0.742146)
+
+[node name="grass5" parent="platform-grass-large-round2" index="7" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47938, 0.494852, -1.43466)
+
+[node name="grass-small5" parent="platform-grass-large-round2" index="8" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.18627, 0.49161, -1.68836)
+
+[node name="grass6" parent="platform-grass-large-round2" index="9" instance=ExtResource("2_0th4y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 0.772708, 0.490164, -1.91625)
+
+[node name="grass-small6" parent="platform-grass-large-round2" index="10" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 0.306401, 0.483541, -2.05838)
+
+[node name="grass7" parent="platform-grass-large-round2" index="11" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0846735, 0.494852, -2.02416)
+
+[node name="grass-small7" parent="platform-grass-large-round2" index="12" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.543764, 0.49161, -2.00541)
+
+[node name="grass8" parent="platform-grass-large-round2" index="13" instance=ExtResource("2_0th4y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, -0.916484, 0.490164, -1.82032)
+
+[node name="grass-small8" parent="platform-grass-large-round2" index="14" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, -1.32173, 0.486922, -1.66225)
+
+[node name="grass9" parent="platform-grass-large-round2" index="15" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.53636, 0.494852, -1.33423)
+
+[node name="grass-small9" parent="platform-grass-large-round2" index="16" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.80308, 0.49161, -0.935993)
+
+[node name="grass-small10" parent="platform-grass-large-round2" index="17" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, -2.00681, 0.486922, -0.795402)
+
+[node name="grass11" parent="platform-grass-large-round2" index="18" instance=ExtResource("2_0th4y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99392, 0.494852, 0.0267426)
+
+[node name="grass-small11" parent="platform-grass-large-round2" index="19" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.06979, 0.49161, 0.473715)
+
+[node name="grass12" parent="platform-grass-large-round2" index="20" instance=ExtResource("2_0th4y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, -1.84576, 0.490164, 0.763769)
+
+[node name="grass-small12" parent="platform-grass-large-round2" index="21" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, -1.74177, 0.486922, 1.23048)
+
+[node name="grass-small13" parent="platform-grass-large-round2" index="22" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15328, 0.49161, 1.8291)
+
+[node name="grass15" parent="platform-grass-large-round2" index="23" instance=ExtResource("2_0th4y")]
+transform = Transform3D(0.94402, 0, 0.329888, 0, 1, 0, -0.329888, 0, 0.94402, 0.0924943, 0.494852, 1.84275)
+
+[node name="grass-small15" parent="platform-grass-large-round2" index="24" instance=ExtResource("3_m306y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.447919, 0.49161, 2.04499)
+
+[node name="grass-small16" parent="platform-grass-large-round2" index="25" instance=ExtResource("3_m306y")]
+transform = Transform3D(0.867722, 0, -0.49705, 0, 1, 0, 0.49705, 0, 0.867722, 0.72981, 0.486922, 1.96284)
+
+[node name="flowers" parent="platform-grass-large-round2" index="26" instance=ExtResource("4_ch3ad")]
+transform = Transform3D(0.542131, 0, 0, 0, 0.542131, 0, 0, 0, 0.542131, 0.921764, 0.489183, -1.22033)
+
+[node name="flowers2" parent="platform-grass-large-round2" index="27" instance=ExtResource("4_ch3ad")]
+transform = Transform3D(0.496181, 0, 0.218428, 0, 0.542131, 0, -0.218428, 0, 0.496181, -1.3615, 0.489183, 0.517175)
+
+[node name="flowers3" parent="platform-grass-large-round2" index="28" instance=ExtResource("4_ch3ad")]
+transform = Transform3D(0.328149, 0, 0.431537, 0, 0.542131, 0, -0.431537, 0, 0.328149, 0.334684, 0.489183, 1.54795)
+
+[node name="flowers-tall2" parent="platform-grass-large-round2" index="29" instance=ExtResource("5_s6rbb")]
+transform = Transform3D(0.542131, 0, 0, 0, 0.542131, 0, 0, 0, 0.542131, -1.27616, 0.480377, -0.738967)
+
+[node name="flowers-tall4" parent="platform-grass-large-round2" index="30" instance=ExtResource("5_s6rbb")]
+transform = Transform3D(-0.335964, 0, -0.425481, 0, 0.542131, 0, 0.425481, 0, -0.335964, 1.42665, 0.480377, 0.609261)
+
+[node name="flowers-tall3" parent="platform-grass-large-round2" index="31" instance=ExtResource("5_s6rbb")]
+transform = Transform3D(0.482388, 0, -0.247403, 0, 0.542131, 0, 0.247403, 0, 0.482388, -0.991212, 0.480377, 1.20802)
+
+[node name="mushrooms2" parent="platform-grass-large-round2" index="32" instance=ExtResource("6_ohofl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.21669, 0.500421, -1.02986)
+
+[node name="mushrooms3" parent="platform-grass-large-round2" index="33" instance=ExtResource("6_ohofl")]
+transform = Transform3D(0.956996, 0, -0.290101, 0, 1, 0, 0.290101, 0, 0.956996, 0.382586, 0.500421, -1.02986)
+
+[node name="mushrooms4" parent="platform-grass-large-round2" index="34" instance=ExtResource("6_ohofl")]
+transform = Transform3D(0.160381, 0, -0.987055, 0, 1, 0, 0.987055, 0, 0.160381, 0.885644, 0.500421, -0.604165)
+
+[node name="mushrooms5" parent="platform-grass-large-round2" index="35" instance=ExtResource("6_ohofl")]
+transform = Transform3D(-0.517788, 0, -0.855509, 0, 1, 0, 0.855509, 0, -0.517788, 1.11403, 0.500421, 0.0141854)
+
+[node name="mushrooms6" parent="platform-grass-large-round2" index="36" instance=ExtResource("6_ohofl")]
+transform = Transform3D(-0.830848, 0, -0.556499, 0, 1, 0, 0.556499, 0, -0.830848, 0.821229, 0.500421, 0.661377)
+
+[node name="mushrooms7" parent="platform-grass-large-round2" index="37" instance=ExtResource("6_ohofl")]
+transform = Transform3D(-0.999547, 0, -0.0301025, 0, 1, 0, 0.0301025, 0, -0.999547, 0.330625, 0.500421, 0.986496)
+
+[node name="mushrooms8" parent="platform-grass-large-round2" index="38" instance=ExtResource("6_ohofl")]
+transform = Transform3D(-0.82759, 0, 0.561332, 0, 1, 0, -0.561332, 0, -0.82759, -0.29534, 0.500421, 0.905948)
+
+[node name="mushrooms9" parent="platform-grass-large-round2" index="39" instance=ExtResource("6_ohofl")]
+transform = Transform3D(-0.240618, 0, 0.97062, 0, 1, 0, -0.97062, 0, -0.240618, -0.735843, 0.500421, 0.602127)
+
+[node name="mushrooms10" parent="platform-grass-large-round2" index="40" instance=ExtResource("6_ohofl")]
+transform = Transform3D(0.889009, 0, -0.457889, 0, 1, 0, 0.457889, 0, 0.889009, -1.09013, 0.500421, -0.00927401)
+
+[node name="mushrooms11" parent="platform-grass-large-round2" index="41" instance=ExtResource("6_ohofl")]
+transform = Transform3D(0.975825, 0, -0.218552, 0, 1, 0, 0.218552, 0, 0.975825, -0.819161, 0.500421, -0.66506)
+
+[node name="rocks2" parent="platform-grass-large-round2" index="42" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(4.10514, 0, 0, 0, 7.98481, 0, 0, 0, 4.10514, 2.73847, -0.167119, -0.621022)
+
+[node name="rocks10" parent="platform-grass-large-round2" index="43" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(3.55376, 0, 2.05499, 0, 9.45816, 0, -2.05499, 0, 3.55376, 1.93158, -0.167119, -1.88927)
+
+[node name="rocks3" parent="platform-grass-large-round2" index="44" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(3.84972, 0, -1.42543, 0, 7.26841, 0, 1.42543, 0, 3.84972, 2.57223, -0.167119, 1.54539)
+
+[node name="rocks4" parent="platform-grass-large-round2" index="45" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(1.75294, 0, -3.71206, 0, 9.81551, 0, 3.71206, 0, 1.75294, 1.39133, -0.167119, 2.42019)
+
+[node name="rocks5" parent="platform-grass-large-round2" index="46" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-0.336798, 0, -4.0913, 0, 7.01114, 0, 4.0913, 0, -0.336798, -0.35222, -0.167119, 2.72189)
+
+[node name="rocks6" parent="platform-grass-large-round2" index="47" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-3.72204, 0, -1.73166, 0, 9.63522, 0, 1.73166, 0, -3.72204, -1.91056, -0.167119, 2.50921)
+
+[node name="rocks7" parent="platform-grass-large-round2" index="48" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-4.04129, 0, -0.721246, 0, 4.98155, 0, 0.721246, 0, -4.04129, -2.49287, -0.167119, 1.2576)
+
+[node name="rocks8" parent="platform-grass-large-round2" index="49" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-3.92863, 0, 1.19084, 0, 7.51928, 0, -1.19084, 0, -3.92863, -2.67549, -0.167119, -0.332534)
+
+[node name="rocks14" parent="platform-grass-large-round2" index="50" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-4.07359, 0, -0.508042, 0, 7.51928, 0, 0.508042, 0, -4.07359, -3.10092, 0.0672047, 1.07097)
+
+[node name="rocks11" parent="platform-grass-large-round2" index="51" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-3.1516, 4.29626, 1.19084, 2.45092, 6.03207, 0, -0.955306, 1.30227, -3.92863, -2.72118, 1.58891, -0.346384)
+
+[node name="rocks18" parent="platform-grass-large-round2" index="52" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(2.30839, -1.16614, -3.3344, 1.02305, 7.28145, -0.0507688, 3.2368, -1.46978, 2.39404, 3.174, 2.56887, -1.53691)
+
+[node name="rocks19" parent="platform-grass-large-round2" index="53" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(3.81391, -0.0755337, -5.31087, -0.0780455, 24.4952, -0.0808622, 5.31034, 0.414254, 3.81311, 4.41714, -0.19019, -1.38531)
+
+[node name="rocks20" parent="platform-grass-large-round2" index="54" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-0.987615, -0.0755337, -6.46343, -0.112336, 24.4952, -0.00322478, 6.46249, 0.414254, -0.987814, 3.73699, -0.858177, 0.832052)
+
+[node name="rocks21" parent="platform-grass-large-round2" index="55" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-6.53351, -0.0755337, -0.254005, -0.0244357, 24.4952, 0.109694, 0.253629, 0.414254, -6.53262, 1.34085, -0.915697, 3.79642)
+
+[node name="rocks22" parent="platform-grass-large-round2" index="56" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-5.02932, -0.0730514, 4.17818, 0.0551465, 23.6902, 0.0979228, -4.17787, 0.40064, -5.02841, -1.49362, -0.926298, 3.90645)
+
+[node name="rocks23" parent="platform-grass-large-round2" index="57" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(5.53835, -0.0730514, 3.47533, 0.075839, 23.6902, -0.0829358, -3.47456, 0.40064, 5.53777, -4.18344, -0.896804, 1.67201)
+
+[node name="rocks24" parent="platform-grass-large-round2" index="58" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(6.50235, -0.0730514, -0.686134, 0.00844328, 23.6902, -0.112065, 0.686378, 0.40064, 6.50141, -3.44324, -0.912572, -2.19427)
+
+[node name="rocks12" parent="platform-grass-large-round2" index="59" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-1.96486, 2.72983, -0.139191, 1.46536, 3.42222, -0.680535, -0.305327, -1.14282, -2.37037, -2.69653, 1.14508, 1.62808)
+
+[node name="rocks13" parent="platform-grass-large-round2" index="60" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-2.41425, 4.73406, 2.41669, 0.77269, 5.93481, -2.69325, -3.453, -1.98188, -2.29236, -2.02264, 1.73749, 2.62771)
+
+[node name="rocks9" parent="platform-grass-large-round2" index="61" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-1.6218, 0, 3.7712, 0, 11.1654, 0, -3.7712, 0, -1.6218, -2.23565, -0.167119, -1.78359)
+
+[node name="rocks15" parent="platform-grass-large-round2" index="62" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(1.87261, -2.95945, -3.48734, 2.06243, 9.65395, -2.98023e-08, 3.01528, -4.7653, 2.16579, 1.70973, 1.55005, 2.63975)
+
+[node name="rocks17" parent="platform-grass-large-round2" index="63" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-0.238732, -1.91819, -3.52016, 1.11023, 9.08564, -0.744556, 3.41413, -3.08866, -0.00402576, 3.44243, 1.4526, 0.862963)
+
+[node name="rocks16" parent="platform-grass-large-round2" index="64" instance=ExtResource("7_rc7ml")]
+transform = Transform3D(-0.166743, -0.429391, -2.90889, 0.906017, 7.52403, -0.202071, 2.7687, -2.48799, -0.109061, -0.318396, 1.26815, 2.69396)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="platform-grass-large-round2" index="65"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="platform-grass-large-round2/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_h7k1f")
